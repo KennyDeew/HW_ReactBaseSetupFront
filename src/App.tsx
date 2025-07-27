@@ -1,7 +1,7 @@
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
-import ShowDataComponent from './Components/ShowDataComponent'
+import FetchApiComponent from './Components/FetchApiComponent'
 
 function App() {
   
@@ -15,7 +15,7 @@ function App() {
           <img src={reactLogo} className="logo react" alt="React logo" />
         </a>
       </div>
-      <ShowDataComponent text="Отображаемые данные"/>
+      <FetchApiComponent/>
     </>
   )
 }

@@ -1,4 +1,4 @@
-//a component with big font size
+//a component for showing data
 
 const ShowDataComponent = (props: {text: string}) => {
     
