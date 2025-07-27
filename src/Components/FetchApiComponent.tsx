@@ -14,7 +14,7 @@ const FetchApiComponent = () => {
 
     const [fetchState, setFetchState] = useState<CheckState>({ isCorrect: true });
     const [isLoading, setIsLoading] = useState(true);
-    const [catFact, SetFact] = useState("");
+    const [catFact, setFact] = useState("");
 
     const ShowDataComponentWithLoadingAndCheckingStatus = WithCheckingStatus(WithLoading(ShowDataComponent));
     
@@ -33,7 +33,7 @@ const FetchApiComponent = () => {
                 const randomFactNumber = Math.floor(Math.random() * (factsLength));
                 const catFact = objJson.data[randomFactNumber].fact;
                 //устанавливаем факт
-                SetFact(catFact);
+                setFact(catFact);
                 //скрываем HOC loading
                 setIsLoading(false);
             } else  {
